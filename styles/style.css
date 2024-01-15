@@ -79,6 +79,20 @@ nav li .home{
 /* responsive design related styles */
 /* media query for small devices/mobile */
 @media screen and (max-width:576px) {
+  .menu{
+    display: none;
+  }
+}
+
+/* special */
+@media screen and (min-width:576px) {
+  .humberger{
+    display: none;
+  }
+}
+
+/* media query for tablet/medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
   nav{
     flex-direction: column;
   }
