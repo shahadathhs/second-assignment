@@ -1,0 +1,85 @@
+/* sheared styles */
+ * {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Mulish', sans-serif;
+}
+
+/* header related styles */
+/* nav styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.website-name{
+  display: flex;
+  gap: 10px;
+}
+
+.website-name p{
+  color: #131318;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.booking{
+  color: #FF5400;
+}
+
+nav > ul{
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 25px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+nav li a{
+  text-decoration: none;
+  color: #424247;
+  cursor: pointer;
+}
+
+nav li .home{
+  color: #FF5400;
+}
+
+/* banner styles */
+.banner{
+  position: relative;
+  text-align: center;
+}
+
+.banner-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-title{
+  color: #FFF;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.banner-description{
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* responsive design related styles */
+/* media query for small devices/mobile */
+@media screen and (max-width:576px) {
+  nav{
+    flex-direction: column;
+  }
+}
