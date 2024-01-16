@@ -56,6 +56,10 @@ nav li .home{
   text-align: center;
 }
 
+.banner img{
+  width: 100%;
+}
+
 .banner-content{
   position: absolute;
   top: 50%;
@@ -212,6 +216,66 @@ nav li .home{
   "img-6 img-6 img-6 img-7 img-7 img-7 img-7 img-7";
 }
 
+/* choose section related styles */
+.choose{
+  margin: 40px;
+}
+
+.choose-content{
+  text-align: center;
+  padding: 20px;
+}
+
+.choose-title{
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.choose-para, .box-para{
+  color: #5A5A5D;
+  font-weight: 400;
+}
+
+.box-heading{
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.box-service-1, .box-service-3{
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.20);
+  background: rgba(251, 181, 99, 0.05);
+  padding: 20px;
+}
+
+.box-service-2{
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.20);
+  background: rgba(41, 206, 246, 0.05);
+  padding: 20px;
+}
+
+.box-service-1{
+  grid-area: box-1;
+}
+
+.box-service-2{
+  grid-area: box-2;
+}
+
+.box-service-3{
+  grid-area: box-3;
+}
+
+.choose-box{
+  display: grid;
+  grid-gap:20px;
+  grid-template-areas:
+  "box-1 box-1 box-2 box-2"
+  ".     box-3 box-3 .    ";
+}
 
 /*  footer related styles */ 
 
@@ -285,6 +349,11 @@ footer{
     flex-direction: column;
   }
 
+  .choose-box{
+    display: flex;
+    flex-direction: column;
+  }
+
   footer{
     padding: 0;
   }
@@ -314,7 +383,6 @@ footer{
     height: 100vh;
   }
 
-  
   .popular img{
     height: 120%;
     width: 120%;
