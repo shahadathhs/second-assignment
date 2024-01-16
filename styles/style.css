@@ -277,6 +277,66 @@ nav li .home{
   ".     box-3 box-3 .    ";
 }
 
+/* perfect place section */
+.perfect-place{
+  display: flex;
+  padding: 40px;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.perfect{
+  max-width: 500px;
+}
+
+.perfect-heading{
+  color: #131318;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.perfect-para{
+  color: #5A5A5D;
+  font-weight: 400;
+}
+
+.perfect-btn{
+  border-radius: 10px;
+  background: #FF5400;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 0;
+  padding: 10px 15px;
+}
+
+.perfect-img{
+  position: relative;
+  text-align: center;
+}
+
+.perfect-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.perfect-img-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.perfect-img-content a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFF;
+}
+
 /* newsletter section */
 .newsletter{
   display: flex;
@@ -413,7 +473,7 @@ footer{
     height: 100vh;
   }
 
-  .popular, .newsletter{
+  .popular, .newsletter, .perfect-place{
     flex-direction: column;
   }
 
@@ -449,7 +509,7 @@ footer{
 
 /* media query for tablet/medium devices */
 @media screen and (min-width:600px) and (max-width:992px) {
-  nav, .newsletter{
+  nav, .newsletter, .perfect-place{
     flex-direction: column;
   }
 
