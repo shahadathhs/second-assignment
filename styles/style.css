@@ -283,7 +283,6 @@ nav li .home{
   padding: 40px;
   justify-content: space-between;
   gap: 80px;
-  align-items: center;
 }
 
 .news-input{
@@ -337,10 +336,12 @@ nav li .home{
   background: #FF5400;
   color: #FFF;
   padding: 10px;
-  width: 250px;
+  width: 200px;
   text-align: center;
   float: right;
-  rotate: (-40deg);
+  position: relative;
+  bottom: 100px;
+  transform: rotate(-15deg);
 }
 
 .p1, .p2{
@@ -348,14 +349,9 @@ nav li .home{
   padding: 0;
 }
 
-.p1{
+.p1, .p2{
   font-weight: 400;
   padding-bottom: 5px;
-}
-
-.p2{
-  font-weight: 800;
-  font-size: 1.5rem;
 }
 
 /*  footer related styles */ 
@@ -417,7 +413,7 @@ footer{
     height: 100vh;
   }
 
-  .popular{
+  .popular, .newsletter{
     flex-direction: column;
   }
 
@@ -438,6 +434,10 @@ footer{
   footer{
     padding: 0;
   }
+
+  .img-content{
+    width: 160px;
+  }
 }
 
 /* special */
@@ -449,7 +449,7 @@ footer{
 
 /* media query for tablet/medium devices */
 @media screen and (min-width:600px) and (max-width:992px) {
-  nav{
+  nav, .newsletter{
     flex-direction: column;
   }
 
