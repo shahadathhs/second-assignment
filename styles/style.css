@@ -148,6 +148,7 @@ nav li .home{
 .destination{
   margin: 40px;
   text-align: center;
+  justify-content: center;
 }
 
 .destination-title{
@@ -159,6 +160,9 @@ nav li .home{
 .destination-para{
   color: rgba(19, 19, 24, 0.70);
   font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .destination-img{
@@ -414,6 +418,39 @@ nav li .home{
   padding-bottom: 5px;
 }
 
+/* review and suggestion section related styles */
+.review-and-suggestion{
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+  text-align: center;
+  gap: 100px;
+}
+
+.review, .suggestion{
+  max-width: 600px;
+}
+
+.suggestion-btn, .review-btn{
+  border-radius: 8px;
+  background: #FF5400;
+  border: 0;
+  padding: 12px;
+  color: #FFF;
+  font-size: 1.2rem;
+}
+
+.review-heading, .suggestion-heading{
+  color: #131318;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.review-para, .suggestion-para{
+  color: #5A5A5D;
+  font-weight: 400;
+}
+
 /*  footer related styles */ 
 
 footer{
@@ -447,11 +484,6 @@ footer{
 /* responsive design related styles */
 /* media query for small devices/mobile */
 @media screen and (max-width:600px) {
-  nav{
-    padding: 0;
-    margin: 0;
-  }
-
   .website-name p{
     color: #131318;
     font-size: 1rem;
@@ -473,7 +505,8 @@ footer{
     height: 100vh;
   }
 
-  .popular, .newsletter, .perfect-place{
+  .popular, .newsletter, .perfect-place,
+  .review-and-suggestion{
     flex-direction: column;
   }
 
@@ -491,12 +524,12 @@ footer{
     flex-direction: column;
   }
 
-  footer{
-    padding: 0;
-  }
-
   .img-content{
     width: 160px;
+  }
+
+  .perfect-img-content{
+    font-size: 1rem;
   }
 }
 
