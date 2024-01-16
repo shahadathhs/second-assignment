@@ -140,7 +140,80 @@ nav li .home{
   font-weight: 600;
 }
 
-/* footer related styles */
+/* destination section related styles */
+.destination{
+  margin: 40px;
+  text-align: center;
+}
+
+.destination-title{
+  color: #131318;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.destination-para{
+  color: rgba(19, 19, 24, 0.70);
+  font-weight: 400;
+}
+
+.destination-img{
+  position: relative;
+  text-align: center;
+}
+
+.img-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.img-link{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+#img-1{
+  grid-area: img-1;
+}
+#img-2{
+  grid-area: img-2;
+}
+#img-3{
+  grid-area: img-3;
+}
+#img-4{
+  grid-area: img-4;
+}
+#img-5{
+  grid-area: img-5;
+}
+#img-6{
+  grid-area: img-6;
+}
+#img-7{
+  grid-area: img-7;
+}
+
+.destination-img-container{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+  "img-1 img-1 img-1 img-1 img-2 img-2 img-2 img-2"
+  "img-3 img-3 img-4 img-4 img-4 img-4 img-5 img-5"
+  "img-6 img-6 img-6 img-7 img-7 img-7 img-7 img-7";
+}
+
+
+/*  footer related styles */ 
 
 footer{
   text-align: center;
@@ -205,6 +278,11 @@ footer{
 
   .popular img{
     width: 100%;
+  }
+
+  .destination-img-container{
+    display: flex;
+    flex-direction: column;
   }
 
   footer{
