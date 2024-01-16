@@ -76,11 +76,53 @@ nav li .home{
   font-weight: 400;
 }
 
+.banner-input{
+  padding: 20px;
+  display: flex;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.30);
+  gap: 20px;
+}
+
+.input{
+  display: flex;
+  background: #FFF;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.input input{
+  border: 0;
+  color: rgba(19, 19, 24, 0.50);
+  font-weight: 400;
+}
+
+#input-btn{
+  background-color: #FF5400;
+  color: #FFF;
+  justify-content: center;
+}
+#input-btn input{
+  background-color: #FF5400;
+  color: #FFF;
+}
+
 /* responsive design related styles */
 /* media query for small devices/mobile */
 @media screen and (max-width:576px) {
   .menu{
     display: none;
+  }
+
+  
+  .banner-input{
+    flex-direction: column;
+  }
+
+  .banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
   }
 }
 
@@ -95,5 +137,16 @@ nav li .home{
 @media screen and (min-width:576px) and (max-width:992px) {
   nav{
     flex-direction: column;
+  }
+
+  .banner-input{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
   }
 }
